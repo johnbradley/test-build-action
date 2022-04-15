@@ -50,4 +50,4 @@ ADD scripts/segmentation_main.py /pipeline/segmentation_main.py
 ADD scripts/helper_mini.py /pipeline/helper_mini.py
 
 # Set the default command to python3
-CMD ["python3", "scripts/segmentation_main.py"]
+CMD echo "Usage: python /pipeline/segmentation_main.py <input_jpg_path> <output_png_path>"
