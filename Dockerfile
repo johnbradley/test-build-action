@@ -50,5 +50,10 @@ ENV PATH="/pipeline:${PATH}"
 ADD scripts/segmentation_main.py /pipeline/segmentation_main.py
 ADD scripts/helper_mini.py /pipeline/helper_mini.py
 
+# Label
+LABEL bgnn.project.part="fish trait segmentation"
+LABEL bgnn.project.author=" M. Maruf, T. Tabarin, J. Bradley"
+LABEL bgnn.project.release-date="April 22"
+
 # Set the default command to python3
 CMD echo "Usage: segmentation_main.py <input_jpg_path> <output_png_path>"
